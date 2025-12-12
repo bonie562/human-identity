@@ -4,7 +4,7 @@ import {
   nowDesignImg,
   randomImgs,
   redPillBluePillImg,
-} from "../randowmPage/randomImgs/randomimgs";
+} from "../randowmPage/randomImgs/randomImgs";
 
 export const randomData = [
   {

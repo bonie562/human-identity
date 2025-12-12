@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import SplitType from "split-type";
-import Lenis from "@studio-freight/lenis";
 import { motion } from "framer-motion";
 
 gsap.registerPlugin(ScrollTrigger);

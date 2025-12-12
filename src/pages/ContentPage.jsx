@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import SideBar from "../component/SideBar";
 import RelatedWorks from "../component/RelatedWorks";
-import Lenis from "lenis";
 
 function ContentPage({ workData }) {
   const [scrolled, setScrolled] = useState(false);
@@ -22,66 +21,7 @@ function ContentPage({ workData }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    // Apply Lenis smooth scrolling conditionally based on screen size
-    let lenis;
-    let rafId;
-
-    const initLenis = () => {
-      const isMobile = window.innerWidth < 1024;
-      
-      if (lenis) {
-        lenis.destroy();
-      }
-      
-      if (isMobile) {
-        // For mobile/tablet: apply to window
-        lenis = new Lenis({
-          smooth: true,
-        });
-      } else {
-        // For desktop: apply to scroll-container element
-        const wrapper = document.getElementById("scroll-container");
-        if (wrapper) {
-          lenis = new Lenis({
-            wrapper,
-            // content: wrapper,
-            smooth: true,
-          });
-        }
-      }
-
-      if (lenis) {
-        const raf = (time) => {
-          lenis.raf(time);
-          rafId = requestAnimationFrame(raf);
-        };
-
-        rafId = requestAnimationFrame(raf);
-      }
-    };
-
-    initLenis();
-
-    // Handle window resize
-    const handleResize = () => {
-      initLenis();
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-      if (lenis) {
-        lenis.destroy();
-      }
-      if (rafId) {
-        cancelAnimationFrame(rafId);
-      }
-    };
-  }, []);
-
- return (
+  return (
     <div className="grid md:grid-cols-1 lg:grid-cols-[23rem_1fr] w-full  lg:*:h-screen ">
       <div className="">
         <SideBar

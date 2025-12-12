@@ -3,7 +3,6 @@ import ContactCard from "../component/ContactCard";
 import ProjectInfo from "../component/ProjectInfo";
 import infoText from "../component/infoText";
 import BackToTop from "../component/BackToTop";
-import Lenis from "lenis";
 
 function Bimbeat({ workData }) {
   const bimbeatContents = Array.isArray(workData?.contents)

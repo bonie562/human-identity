@@ -11,7 +11,6 @@ import Ravewave from "./pages/Ravewave";
 import Creatir from "./pages/Creatir";
 import ContentPage from "./pages/ContentPage";
 import NotFound from './pages/NotFound'
-import "lenis/dist/lenis.css";
 
 
 function App() {

@@ -1,7 +1,7 @@
 import Web2 from "../img/web 2/web2";
 import { Tags } from "../img/TAGS/Tags";
 import bimbeatWorks from "../img/bim works/bimbeatWorks";
-import loca from "../img/loca works/Loca";
+import loca from "../img/loca works/loca";
 import raveWorks from "../img/rave works/rave";
 import creatirWorks from "../img/creatir/creatir";
 import { WebImages } from "../img/website/WebImage";

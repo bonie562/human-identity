@@ -1,0 +1,13 @@
+.card-animation {
+  animation: cardAnimation 2s ease linear infinite;
+  /* background: rgb(218, 61, 5); */
+}
+
+@keyframes cardAnimation {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 70rem;
+  }
+}

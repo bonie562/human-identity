@@ -1,0 +1,14 @@
+/* .headerSec {
+  @apply flex justify-end;
+
+  animation: headerText ease forwards 5s normal;
+}
+
+@keyframes headerText {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 15rem;
+  }
+} */

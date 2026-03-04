@@ -10,7 +10,7 @@ export default defineConfig({
       output: {
         // Split code into chunks for better caching
         manualChunks: {
-          'vendor': ['react', 'react-dom', 'React-router-dom'],
+          'vendor': ['react', 'react-dom', 'react-router-dom'],
         },
       },
     },

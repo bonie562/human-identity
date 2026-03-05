@@ -126,7 +126,7 @@ function ContactCard({ email }) {
   };
 
   return (
-    <div className="flex flex-col gap-4 bg-grey p-4 min-w-64 w-full sm:w-6/12 h-fit rounded-2xl relative">
+    <div className="flex flex-col gap-4 bg-grey p-4 min-w-64 w-full sm:w-6/12 md:w-5/12 lg:w-4/12 xl:w-3/12 h-fit rounded-2xl relative">
       <div className="text-xl sm:text-2xl md:text-3xl font-semibold leading-snug">
         Would you like to work with me?
       </div>
@@ -145,7 +145,7 @@ function ContactCard({ email }) {
         <div className="fixed inset-0 bg-black/30 z-40">
           <div
             ref={modalRef}
-            className="fixed bg-white p-4 sm:p-6 rounded-2xl w-[90vw] sm:w-[85vw] md:w-[75vw] lg:w-full lg:max-w-lg shadow-lg cursor-grab active:cursor-grabbing"
+            className="fixed bg-white p-4 sm:p-6 rounded-2xl w-[90vw] sm:w-[85vw] md:w-[75vw] lg:w-full lg:max-w-lg max-h-[90vh] sm:max-h-[85vh] md:max-h-[80vh] overflow-y-auto shadow-lg cursor-grab active:cursor-grabbing"
             style={{
               left: `${position.x}px`,
               top: `${position.y}px`,

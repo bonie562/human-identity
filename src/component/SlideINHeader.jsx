@@ -18,7 +18,7 @@ function SlideINHeader({ text, borderClr, nrl, nrlMd, bgImg }) {
   return (
     <div
       className=""
-      style={{ borderTop: `40px solid ${borderClr}`, background: `${bgImg}` }}
+      style={{ borderTop: `40px solid ${borderClr}`, background: `#000` }}
     >
       <motion.div
         ref={ref}

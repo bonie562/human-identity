@@ -213,42 +213,7 @@ function WorkPage({ bgImg, sm, md, lg, nrl, nrlMd, headerData, myWork }) {
         <div className="bg-gray-100 w-full">
           <div className="space-y-2 lg:gap-4 w-full">
             <div className="bg-white">
-              {/* <div
-                className={`grid grid-cols-2 items-center sm:h-16 ${nrl} ${nrlMd} px-3 md:px-10 py-3`}
-              >
-                <h4 className="text-black md:text-base lg:text-xl font-semibold">
-                  Available Work
-                </h4>
-                {displayedItems.length > 5 &&
-                  (!isExpand ? (
-                    <button
-                      className="flex items-center gap-1 text-orange-600 justify-self-end hover:text-orange-700 transition-colors duration-150 text-base"
-                      onClick={() => {
-                        setIsExpand(true);
-                        handleMoreIndex();
-                      }}
-                    >
-                      View All
-                      <span>
-                        <CgArrowTopRight className="text-xl" />
-                      </span>
-                    </button>
-                  ) : (
-                    <button
-                      className="flex items-center gap-1 text-orange-600 justify-self-end hover:text-orange-700 transition-colors duration-150 text-base"
-                      onClick={() => {
-                        setIsExpand(false);
-                        handleMoreIndex();
-                      }}
-                    >
-                      Collapse
-                      <span>
-                        <CgArrowDownR className="text-xl" />
-                      </span>
-                    </button>
-                  ))}
-              </div> */}
-
+             
               <div ref={containerRef} className="p-3 md:p-10">
                 <Masonry
                   breakpointCols={breakpointColumnsObj}

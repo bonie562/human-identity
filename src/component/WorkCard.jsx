@@ -24,20 +24,20 @@ function WorkCard({ id, title, desc, img, vid, tag, date, heightClass, idx }) {
       //   handleCardClick(id);
       // }}
     >
-      <div className={`md:w-full h-fit overflow-hidden`}>
+      <div className={`w-full md:w-full overflow-hidden`}>
         {img ? (
           <img
             src={img}
             alt=""
             draggable={false}
-            className="w-fit h-fit object-cover hover:scale-105 transition-all duration-700"
+            className="w-full h-auto object-cover hover:scale-105 transition-all duration-700"
           />
         ) : (
           <video
             autoPlay
             muted
             loop
-            className="w-full h-full object-cover hover:scale-105 transition-all duration-700"
+            className="w-full md:h-full object-center object-cover hover:scale-105 transition-all duration-700"
           >
             <source src={vid} type={getVideoType(vid)} />
           </video>
